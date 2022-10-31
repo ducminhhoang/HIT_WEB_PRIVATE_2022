@@ -4,35 +4,34 @@
     box-sizing: border-box;
 }
 .item-r1, .item-r2, .item-r3, .item-r4, .item-r5, .item-r6, .item-r7,
-.item1, .item2, .main, .left-below-right{
-    border: #C9C9C9 solid 7px;
-}
-header, footer{
-    border-left: #C9C9C9 solid 14px;
-    border-right: #C9C9C9 solid 14px;
+.item1, .item2, .main, .left-below-right, header, footer{
+    border: white solid 2px;
 }
 body{
     width: 100%;
     height: 100vh;
     background-color: #C9C9C9;
+    padding: 0 14px;
 }
 header{
     height: 5%;
     background-color: #FFBFCB;
+    margin-bottom: 14px;
 }
 #content{
-    height: 90%;
+    height: calc(90% - 28px);
     width: 100%;
     display: flex;
-    border: #C9C9C9 solid 7px;
+    /* border: #C9C9C9 solid 7px; */
 }
 .left{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+    margin-right: 14px;
 }
 .right{
-    width: 40%;
+    width: calc(100% - 14px - 60%);
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -41,69 +40,75 @@ header{
     height: 50%;
     width: 100%;
     background-color: #4CEBA9;
+    margin-bottom: 14px;
 }
 .left-below-left{
     width: 50%;
-    height: 50%;
+    height: calc(50% - 14px);
+    margin-right: 14px;
 }
 .item1{
     background-color: #FE0002;
     width: 100%;
     height: 40%;
+    margin-bottom: 14px;
 }
 .item2{
     background-color: #FE6D00;
     width: 100%;
-    height: 60%;
+    height: calc(60% - 14px);
 }
 .left-below-right{
     background-color: #F000FF;
-    width: 50%;
-    height: 50%;
+    width: calc(50% - 14px);
+    height: calc(50% - 14px);
 }
 .center{
-    height: 44%;
+    height: calc(44% - 14px);
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .item-r1{
-    background-color: #F000FF;
-    width: 80%;
+    background-color: #810081;
+    width: calc(80% - 14px);
     height: 24%;
 }
 .item-r2{
     background-color: #2F8B58;
+    margin-left: 14px;
     width: 20%;
     height: 24%;
 }
 .item-r3{
     background-color: #FFFF01;
-    height: 16%;
+    margin: 14px 0;
+    height: calc(16% - 14px);
     width: 100%;
 }
 .item-r4{
     background-color: #008083;
-    width: 100%;
+    width: 31%;
     height: 100%;
 }
 .item-r5{
     background-color: #FF8380;
-    width: 100%;
+    width: 31%;
     height: 100%;
 }
 .item-r6{
     background-color: #008083;
-    width: 100%;
+    width: 31%;
     height: 100%;
 }
 .item-r7{
     background-color: #CB9D62;
-    height: 16%;
+    height: calc(16% - 14px);
     width: 100%;
+    margin-top: 14px;
 }
 footer{
     height: 5%;
     background-color: #0E0E0E;
-    border-bottom: 0;
+    margin-top: 14px;
 }
