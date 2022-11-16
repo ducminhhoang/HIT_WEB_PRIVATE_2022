@@ -124,6 +124,10 @@ input{
 }
 .left div{
     font-family: 'Baloo Tammudu 2', cursive;
+    line-height: 60px;
+}
+.left > p{
+    width: 80%;
 }
 .left{
     width: 50%;
