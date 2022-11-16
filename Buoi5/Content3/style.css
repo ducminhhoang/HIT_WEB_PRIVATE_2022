@@ -31,7 +31,8 @@ a{
     background-color: #F5F2F7;
     padding: 0 60px;
     position: relative;
-    
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.8);
+    overflow: hidden;
 }
 .top{
     width: 100%;
@@ -125,7 +126,7 @@ input{
     font-family: 'Baloo Tammudu 2', cursive;
 }
 .left{
-    width: 40%;
+    width: 50%;
     height: 100%;
     color: #b2b0b3;
 }
@@ -157,6 +158,8 @@ button:hover{
 .socail{
     display: flex;
     margin-top: 80px;
+    position: absolute;
+    bottom: 30px;
 }
 .socail > i{
     cursor: pointer;
@@ -202,4 +205,23 @@ img{
     transform: translateY(-10px);
     transform: rotate(30deg);
     transform: scale(1.2,1.2);
+}
+.dots{
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: #9ea5ff;
+    transition: all 0.2s ease-in-out;
+}
+.dot:hover{
+    transform: scale(1.4, 1.4);
+    background-color: #5E5ED7;
 }
