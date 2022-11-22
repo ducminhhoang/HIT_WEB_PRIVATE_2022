@@ -48,6 +48,7 @@ button{
     font-weight: bold;
     margin-top: 24px;
     cursor: pointer;
+    background-color: #fff;
 }
 li a:hover {
     color: #fff;
@@ -64,6 +65,11 @@ header{
     position: fixed;
     top: 0;
     z-index: 2;
+}
+header > i{
+    display: none;
+    padding: 5px 10px;
+    border: 1px solid #eee;
 }
 .header__left{
     font-size: 18px;
@@ -156,9 +162,9 @@ header{
 }
 .profolio__top{
     width: 100%;
-    height: calc(width/3*9/16);
+    height: auto;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
 }
 .profolio__top--item{
@@ -192,15 +198,17 @@ header{
 }
 .profolio__top img{
     width: 100%;
+    height: 100%;
 }
 .profolio__bottom{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 38%;
+    height: 50%;
     justify-content: center;
     align-items: center;
     color: #fff;
+    text-align: center;
 }
 .profolio__top--item:hover .profolio__top--cap{
     display: flex;
@@ -284,4 +292,93 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Mobile: width <= 520px */
+@media only screen and (max-width: 520px) {
+    .home, .about, .services{
+        padding: 0 5% !important;
+    }
+    .contact{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .services__list div{
+        width: 90% !important;
+    }
+    .profolio{
+        height: auto;
+    }
+    .profolio__bottom{
+        height: 300px;
+    }
+    .profolio__top{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100% !important;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+}
+
+/* Tablet:  width > 480px and width <= 768px */
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 36px !important;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        margin: 16px 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    header{
+        background-color: #fff;
+    }
+    header li a{
+        color: black;
+    }
+    .header__right{
+        display: none;
+    }
+    header > i{
+        display: block;
+    }
+    .home{
+        padding: 0 18%;
+        height: 100vh;
+    }
+    .about{
+        height: 100vh;
+    }
+    .services{
+        height: 100vh;
+    }
+    .services__list{
+        flex-wrap: wrap;
+    }
+    .services__list div{
+        width: 45%;
+    }
+    .profolio__top{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+    .contact{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .home, .about, .services{
+        padding: 0 8% !important;
+    }
+    .contact{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }
