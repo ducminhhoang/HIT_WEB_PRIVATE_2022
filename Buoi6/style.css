@@ -66,12 +66,33 @@ header{
     top: 0;
     z-index: 2;
 }
-header > i{
+.icon{
     display: none;
     padding: 5px 10px;
     border: 1px solid #eee;
-    position: relative;
+    transition: 0.3s ease;
+}
+.short{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 66px;
+    right: 0;
     z-index: 3;
+}
+.short li > a{
+    display: none;
+    width: 100vw;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
 .header__left{
     font-size: 18px;
@@ -304,7 +325,7 @@ footer{
 }
 
 /* Mobile: width <= 520px */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 740px) {
     .home, .about, .services{
         padding-left: 0;
         padding-right: 0;
@@ -337,7 +358,7 @@ footer{
 }
 
 /* Tablet:  width > 480px and width <= 768px */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1023px) {
     h1{
         font-size: 36px !important;
         font-weight: 600;
@@ -350,6 +371,15 @@ footer{
         font-size: 20px;
         font-weight: 500;
     }
+    li a:hover {
+        color: #F4623A;
+    }
+    #tablet:hover .short li > a{
+        display: block;
+    }
+    #tablet:hover .icon{
+        transform: rotate(90deg);
+    }
     header{
         background-color: #fff;
     }
@@ -359,7 +389,7 @@ footer{
     .header__right{
         display: none;
     }
-    header > i{
+    .icon{
         display: block;
     }
     .home{
