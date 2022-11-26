@@ -14,6 +14,10 @@ a{
 li{
     list-style: none;
 }
+h6{
+    font-size: 16px;
+    font-weight: bold;
+}
 header{
     background-color: #CD1818;
     width: 100%;
@@ -67,6 +71,7 @@ header{
     background-color: black;
     text-align: center;
     padding: 0 10px;
+    font: ;
 }
 .menu a{
     display: flex;
@@ -82,4 +87,34 @@ header{
 .menu a:hover{
     background-color: #ff3399;
     color: rgb(127, 127, 127);
+}
+.nav{
+    position: relative;
+}
+.nav__con{
+    position: absolute;
+    top: 36px;
+    left: 0;
+    border: 1px solid #eee;
+    width: 460px;
+    height: auto;
+    text-align: justify;
+    padding: 10px 20px;
+    color:black;
+    display: none;
+}
+.nav:hover .nav__con{
+    display: block;
+}
+.nav__con > div{
+    display: flex;
+    margin-top: 10px;
+}
+.nav__con img{
+    height: 50px;
+    width: auto;
+
+}
+.content{
+
 }
