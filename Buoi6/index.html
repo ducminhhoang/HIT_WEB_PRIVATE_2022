@@ -1,179 +1,265 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buổi 6</title>
+    <title>Clone Web</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <div class="header__left">
-            <li><a href="#">Start Bootstrap</a></li>
-        </div>
-        <li id="tablet"><a href="#"><i class="bi bi-list icon"></i></a>
-            <ul class="short">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <div class="container d-flex justify-content-berween">
+            <a href="#">
+                <div class="logo light-text-color">Start Bootstrap</div>
+            </a>
+
+            <ul class="navbar__list d-flex">
+                <li class="nav__item"><a href="#about" class="nav__link light-text-color">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link light-text-color">Services</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link light-text-color">Portfolio</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link light-text-color">Contact</a></li>
             </ul>
-        </li>
-        <div class="header__right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+        </div>
+    </div>
+
+    <!-- NAVIGATION IN TABLET AND MOBILE -->
+    <div class="navigation--mobile">
+        <div class="container d-flex justify-content-berween">
+            <a href="#">
+                <div class="logo">Start Bootstrap</div>
+            </a>
+
+            <button class="nav--btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <ul class="navbar__list">
+            <li class="nav__item"><a href="#about" class="nav__link text-color">About</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link text-color">Services</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link text-color">Portfolio</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link text-color">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header center-col">
+        <div class="header__wraper center-col">
+            <div class="header__heading text-color">Your Favorite Place for Free Bootstrap Themes</div>
+            <div class="o-hightlight"></div>
+            <div class="header__tittle light-text-color">
+                Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme
+                and
+                start customizing, no strings attached!
+            </div>
+            <a href="#about" class="header--btn white-text-color">FIND OUT MORE</a>
         </div>
     </header>
-    <div class="home">
-        <h1 style="font-size: 50px;">Your Favorite Place for Free Bootstrap Themes</h1>
-        <hr>
-        <p style="color: #CBC7C4">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-        <button>FIND OUT MORE</button>
-    </div>
-    <div class="about">
-        <h2>We've got what you need!</h2>
-        <hr>
-        <p style="color: #CBC7C4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-        <button>GET STARTED!</button>
-    </div>
-    <div class="services">
-        <h2>At Your Service</h2>
-        <hr>
-        <div class="services__list">
-            <div>
-                <i class="bi bi-gem"></i>
-                <h3>Sturdy Themes</h3>
-                <p>Our themes are updated regularly to keep them bug free!</p>
+
+    <!-- SECTION 1 ABOUT -->
+    <section class="about center-col" id="about">
+        <div class="about__wraper center-col">
+            <div class="section__heading  white-text-color">We've got what you need!</div>
+            <div class="w-hightlight"></div>
+            <div class="section__tittle light-text-color">Start Bootstrap has everything you need to get your new
+                website up
+                and
+                running in
+                no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!
             </div>
-            <div>
-                <i class="bi bi-laptop"></i>
-                <h3>Up to Date</h3>
-                <p>All dependencies are kept current to keep things fresh.</p>
+            <a href="#services" class="section__link">GET STARTED!</a>
+        </div>
+    </section>
+
+    <!-- SECTION 2 SERVICES -->
+    <section class="services container center-col" id="services">
+        <div class="section__heading">At Your Service</div>
+        <div class="o-hightlight"></div>
+        <div class="services__features justify-content-berween">
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-regular fa-gem"></i></div>
+                <div class="feature__item__heading">Sturdy Themes</div>
+                <div class="feature__item__tittle">Our themes are updated regularly to keep them bug free!</div>
             </div>
-            <div>
-                <i class="bi bi-globe"></i>
-                <h3>Ready to Publish</h3>
-                <p>You can use this design as is, or you can make changes!</p>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-solid fa-laptop"></i></div>
+                <div class="feature__item__heading">Up to Date</div>
+                <div class="feature__item__tittle">All dependencies are kept current to keep things fresh.</div>
             </div>
-            <div>
-                <i class="bi bi-heart"></i>
-                <h3>Made with Love</h3>
-                <p>Is it really open source if it's not made with love?</p>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="feature__item__heading">Ready to Publish</div>
+                <div class="feature__item__tittle">You can use this design as is, or you can make changes!</div>
+            </div>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-regular fa-heart"></i></div>
+                <div class="feature__item__heading">Made with Love</div>
+                <div class="feature__item__tittle">Is it really open source if it's not made with love?</div>
             </div>
         </div>
-    </div>
-    <div class="profolio">
-        <div class="profolio__top">
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/1.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/1.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+    </section>
+
+    <!-- SECTION 3 PORFOLIO -->
+    <section id="portfolio">
+        <!-- CATEGORY -->
+        <div class="category flex-wrap">
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/1.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/2.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/2.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/2.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/3.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/3.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/4.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/4.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/5.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/5.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
-            <div class="profolio__top--item">
-                <a href="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/6.jpg">
-                    <img src="http://powerindoperkasa.com/assets/img/portfolio/thumbnails/6.jpg" alt="">
-                    <div class="profolio__top--cap">
-                        <p>CATEGORY</p>
-                        <h5>Project Name</h5>
-                    </div>
-                </a>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
             </div>
         </div>
-        <div class="profolio__bottom">
-            <h2>Free Download at Start Bootstrap!</h2>
-            <button>DOWNLOAD</button>
+
+        <div class="download center-col">
+            <div class="section__heading white-text-color">Free Download at Start Bootstrap!</div>
+            <a href="#" class="section__link">DOWNLOAD NOW!</a>
         </div>
-    </div>
-    <div class="contact">
-        <div class="contact__container">
-            <h2>Let's Get In Touch!</h2>
-            <hr>
-            <p>Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
-            <div class="contact__xininfor">
-                <form action="">
-                    <div class="contact__xininfor--name">
-                        <input type="text" id="name" placeholder=" ">
-                        <label for="name">Full name</label>
-                    </div>
-                    <div class="contact__xininfor--email">
-                        <input type="text" id="email" placeholder=" ">
-                        <label for="email">Email address</label>
-                    </div>
-                    <div class="contact__xininfor--phone">
-                        <input type="text" id="phone" placeholder=" ">
-                        <label for="phone">Phone number</label>
-                    </div>
-                    <div class="contact__xininfor--message" style="height: auto;">
-                        <textarea name="message" id="message" style="height: 160px; resize: vertical;" placeholder=" "></textarea>
-                        <label for="messages">Message</label>
-                    </div>
-                </form>
-                <button>SUBMIT</button>
+    </section>
+
+    <!-- SECTION 4 CONTACT -->
+    <section id="contact" class="center-col">
+        <div class="section__heading">Let's Get In Touch!</div>
+        <div class="o-hightlight"></div>
+        <div class="section__tittle text-color">Ready to start your next project with us? Send us a messages and we will
+            get
+            back
+            to you as soon as possible!</div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact__form center-col">
+            <div class="form__group">
+                <input type="text" id="name" placeholder="Enter your first name">
+                <label for="name" class="fullname">Full name</label>
+                <div class="message" data-required="A name is required."></div>
             </div>
-            <i class="bi bi-phone" style="margin-top: 30px; margin-bottom: 5px"></i>
-            <p style="color: rgb(0,0,0);">+1 (555) 123-4567</p>
+
+            <div class="form__group">
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="email" class="emailaddress">Email address</label>
+                <div class="message" data-invalid="Email is not valid."></div>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="phone" placeholder="Enter your number phone">
+                <label for="phone" class="phonenumber">Phone number</label>
+                <div class="message" data-required="A phone number is required."></div>
+            </div>
+
+            <div class="form__group">
+                <!-- <textarea type="text" id="message" placeholder="Message"> -->
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter yor message"></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <button class="submit-form--btn section__link" type="submit">SUMBMIT</button>
+        </form>
+
+        <div class="contact__phone center-col">
+            <div class="mobile__icon">
+
+            </div>
+            <span>+1 (555) 123-4567</span>
         </div>
-    </div>
-    <footer>
-        <p>Copyright © 2022 - Company Name</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section__tittle text-color">Copyright © 2022 - Company Name</div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if($(this).scrollTop()){
-                    $('header').addClass('header--change');
-                }
-                else{
-                    $('header').removeClass('header--change');
-                }
-            })
-        });
-    </script>
+    <!-- OVERLAY -->
+    <!-- <div class="overlay"></div> -->
+
+    <!-- CATEGORY DETAIL -->
+    <div class="overlay center-col hide">
+        <div class="category__detail">
+            <div class="category__detail__content">
+                <button class="close-category__detail">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/1.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/2.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg"
+                    alt="" class="category__detail__content__img">
+
+            </div>
+            <div class="category__detail__control">
+                <button class="prev-category__detail">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="next-category__detail">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
