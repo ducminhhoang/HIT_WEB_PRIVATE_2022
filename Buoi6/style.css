@@ -357,7 +357,6 @@ footer{
         grid-template-rows: auto auto auto auto auto auto;
     }
 }
-
 /* Tablet:  width > 480px and width <= 768px */
 @media only screen and (max-width: 1023px) {
     h1{
@@ -412,10 +411,6 @@ footer{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
-    }
-    .contact{
-        padding-left: 10%;
-        padding-right: 10%;
     }
     .home, .about, .services, .contact{
         padding-left: 8%;
