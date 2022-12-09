@@ -1,0 +1,66 @@
+Phân biệt var, let, const: Scope, Hosting
+	1. var
+	- Là  biến có thể khai báo nhiều lần, và mỗi lần khai báo thì nó sẽ cập nhập giá trị theo biến được khai báo cuối cùng kể cả ở trong khối hay không
+	- Là biến toàn cục (dù khai báo trong một khối nhỏ thì phạm vi ảnh hưởng của nó vẫn trên toàn bộ chương trình)
+	- Hosting: dù khai báo ở vị trí nào, thì khi chạy chương trình, phần khai báo của nó vẫn được đưa lên đầu chương trình
+	2. Const, Let:
+	- Là biến có phạm vi cục bộ
+	- Chỉ được khai báo 1 lần
+		Const: chỉ được gán giá trị 1 lần
+		Let: được gán giá trị nhiều lần
+Toán Tử
+
+Toán tử	Ví dụ	Ý nghĩa
+=	x = y	gán giá trị y vào x
++=	x += y	x = x + y; cộng thêm vào x giá trị y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+??=	x ??= y	Toán tử ??= trong js là phép gán khi null.
+
+Toán tử số học
+Toán tử	Mô tả	Ví dụ
++	phép cộng	25 + 5 = 30, cộng 2 chuỗi thì trở thành phép nối giữa 2 chuỗi, vd: "20"+"2"//kq: "202"
+-	phép trừ	10 - 5 = 5, trừ 2 chuỗi thì trở thành phép trừ giữa 2 số, nếu không phải là số thì sẽ ra NaN, vd: "22"-"2"//kq: 20
+*	phép nhân	2*3 = 6, với chuỗi tương tự như phép trừ
+/	phép chia	20 / 2 = 10, với chuỗi tương tự như phép trừ
+%	lấy phần dư của phép chia	56 / 3 = 2
+++	Tăng thêm 1	var a = 10; a ++; //giá trị a là 11
+--	giảm đi 1	var a = 10; a --; //giá trị a là 9
+
+Toán tử so sánh
+Toán tử	Diễn tả									Ví dụ
+==	so sánh bằng (và giá trị, không so sánh về kiểu dữ liệu)		var v1 = (5 == 10); // false
+										var v2 = 5;         // số
+										var v3 = "5 ";      // chuỗi
+										var v4 = (v2 == v3);// true
+===	=== trong js so sánh giống nhau (true nếu cùng giá trị và kiểu dữ liệu)	var v1 = (5 === 10);  // false
+										var v2 = 5;           // kiểu số number
+										var v3 = "5 ";        // chuỗi string
+										var v4 = (v2 === v3); // false, giống giá trị nhưng khác kiểu
+!=	so sánh khác giá trị (dấu khác trong javascript chỉ so sánh và giá trị  var v1 = (5 != 10);  // true
+	không xét đến kiểu)							var v2 = (5 != "5"); // false
+!==	Khác giá trị và khác kiểu						var v1 = (5 !== 10);  // false - khác giá trị nhưng cùng kiểu
+										var v2 = (5 !== "10"); // true
+>	lớn hơn									10 > 5 true
+>=	lớn hơn hoặc bằng							10 >= 5 true
+<	nhỏ hơn									10 < 5 false
+<=	nhỏ hơn									10 <= 5 false
+
+Toán tử logic
+Toán tử	Diễn tả
+&&	phép và (toán tử && trong javascript) trả về true nếu 2 số hạng là true: a && b
+||	phép hoặc (toán tử hoặc trong javascript) trả về true nếu 1 trong 2 số hạng là true : a || b
+!	phủ định; !a trả về giá trị ngược với biểu thức a
+
+If Else
+if (condition){
+    // statment
+}
+else if (condition){
+    // statment
+}
+else{
+    // statment
+}
