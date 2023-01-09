@@ -1,0 +1,123 @@
+@media only screen and (max-width: 1154px) {
+    .event__main{
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1080px) {
+    .event__main{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .event__left{
+        width: 100%;
+    }
+    .detial{
+        width: 100%;
+        padding-right: 60px;
+    }
+    .detial p{
+        width: 500px;
+    }
+    .card{
+        width: 300px;
+    }
+    .sesion{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #classes p{
+        width: 100%;
+    }
+    .class{
+        width: 44%;
+        height: auto;
+    }
+    .infor p{
+        max-width: 80%;
+    }
+    footer{
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about p{
+        max-width: 250px;
+    }
+    .item{
+        width: 50%;
+        margin-top: 40px;
+    }
+    footer img{
+        width: 50%;
+        height: auto;
+        margin-top: 40px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 890px) {
+    header{
+        display: none;
+    }
+    .header{
+        text-align: start;
+    }
+    .icon__menu{
+        display: block;
+    }
+    .header li a{
+        width: 220px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 0;
+        padding: 0;
+        padding-left: 15px;
+    }
+    .detial p{
+        max-width: 300px;
+    }
+    #bcn{
+        height: auto;;
+    }
+    .cards__member{
+        display: block !important;
+    }
+    .card{
+        height: 276px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .class{
+        width: 100%;
+        height: auto;
+    }
+
+    .titel{
+        width: 200px;
+    }
+    .infor{
+        height: auto;
+    }
+    .infor p{
+        max-width: 300px;
+    }
+    #about form{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .menu__class{
+        height: 70px;
+    }
+}
